@@ -1,64 +1,95 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## 一. 简介 ##
+GitBlog是一个简单易用的Markdown博客系统，它不需要数据库，没有管理后台功能，更新博客只需要添加你写好的Markdown文件即可。它摆脱了在线编辑器排版困难，无法实时预览的缺点，一切都交给Markdown来完成，一篇博客就是一个Markdown文件。同时也支持评论，代码高亮，数学公式，页面PV统计等常用功能。GitBlog提供了不同的主题样式，你可以根据自己的喜好配置，如果你想自己制作博客主题，也是非常容易的。GitBlog还支持整站静态导出，你完全可以导出整站静态网页部署到Github Pages。
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+此项目衍生自[codeigniter4-git-blog](https://github.com/screw-coding/codeigniter4-git-blog),主要是为了实验不同框架的快速实现一个基于markdown的博客系统.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+预览
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![screenshot](blog/screenshot.png)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 二. 功能特点 ##
 
-## Learning Laravel
+1. 使用Markdown
+2. 评论框,支持disqus
+3. 代码高亮
+4. PV统计
+5. Latex数学公式
+6. 自制主题
+7. 响应式
+8. 全站静态导出
+9. 良好的SEO
+10. 使用现代的composer管理包
+11. 使用最新的ThinkPHP6框架
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 三. laravel-git-blog优势 ##
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. 无需数据库，系统更轻量，移植更方便
+2. 使用Markdown编写，摆脱后台编辑排版困难，无法实时预览的缺点
+3. 可全站静态导出
+4. 配置灵活，可自由开关某些功能
+5. 多主题支持，可自制主题
+6. 博客，分类，标签，归档
 
-## Laravel Sponsors
+## 四. 环境要求 ##
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+因为是使用最新的laravel9.x分支开发,因此条件要求比较高
 
-### Premium Partners
+本地原生开发
+- PHP 8.1.0以上,我目前使用的8.1.8的开发环境
+- 安装composer包管理
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 五. 安装步骤 ##
 
-## Code of Conduct
+1. 下载laravel-git-blog源代码
+2. 解压上传到你的PHP网站根目录
+3. 配置nginx或者apache
+4. 打开浏览器，访问网站首页
+5. 上传Markdown文件到`blog`文件夹
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 六. 详细说明 ##
 
-## Security Vulnerabilities
+- [1. 安装](blog/install.md)
+- [2. 目录结构](blog/struct.md)
+- [3. 配置说明](blog/config.md)
+- [4. 编写博客](blog/edit.md)
+- [5. 评论，订阅，统计等](blog/other-func.md)
+- [6. 缓存机制](blog/cache.md)
+- [7. 全站静态导出](blog/export.md)
+- [8. 主题制作](blog/theme.md)
+- [9. 在Nginx上运行GitBlog](blog/nginx.md)
+- [10. 在Apache上运行GitBlog](blog/apache.md)
+- [11. 在SAE上运行GitBlog](blog/sae.md)
+- [12. 使用GitBlog和Github Pages搭建博客](blog/github-pages.md)
+- [13. Gitblog升级](blog/update.md)
+- [14. 从wordpress导入](blog/wordpress.md)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 七. 问题及bug反馈 ##
 
-## License
+issue提出
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 八. 使用者列表 ##
+
+
+## 九. 感谢 ##
+
+GitBlog的成长需要喜欢Markdown，喜欢写博客的各位亲们支持！感谢你们使用GitBlog，感激你们对Gitblog的良好建议和Bug反馈。
+
+- [jockchou](https://github.com/jockchou)
+- [Jetbrains PhpStorm](https://www.jetbrains.com/phpstorm/)
+- [codeigniter4-git-blog](https://github.com/screw-coding/codeigniter4-git-blog)
+## 十. 快速开始 ##
+
+```shell
+  git clone https://github.com/screw-coding/laravel-git-blog
+  composer install
+  cp .example.env .env
+  php artisan serve
+```
+
+
+## 十一.版权 ##
+
+本项目使用[MIT](LICENSE)
